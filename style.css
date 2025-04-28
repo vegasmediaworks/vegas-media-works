@@ -1,0 +1,140 @@
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #121212;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+}
+
+/* Services */
+.services ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.services li {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #121212;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Gallery */
+.masonry-grid {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.masonry-grid img, .masonry-grid iframe {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.masonry-grid img:hover, .masonry-grid iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #25D366;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .masonry-grid {
+        column-count: 1;
+    }
+}
+
+/* About Section */
+.about {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0e0e0e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 8px solid #1f1f1f;
+    border-top: 8px solid #00bcd4;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

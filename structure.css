@@ -1,0 +1,17 @@
+vegas-media-works/
+│
+├── index.html        (Home + Services)
+├── work.html         (Gallery page)
+├── contact.html      (Contact page)
+│
+├── css/
+│   └── style.css     (All main CSS)
+│
+├── js/
+│   └── main.js       (Gallery + Video click handling)
+│
+├── assets/
+│   ├── images/       (Your uploaded images)
+│   └── videos/       (Your video thumbnails if needed)
+│
+└── README.md         (Optional instructions if you want)
