@@ -1,25 +1,53 @@
-/* Apply to the body to cover the entire viewport */
-body {
+/* Reset some defaults */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body: Full black centered */
+body {
     height: 100vh;
-    background-color: #0e0e0e; /* Matte black background */
+    background-color: #0e0e0e;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is loaded */
-    color: #ffffff; /* White text for contrast */
+}
+
+/* Main container */
+.main-container {
     text-align: center;
 }
 
-/* Style for the main heading */
+/* Headings */
 h1 {
-    font-size: 3rem;
+    font-size: 4rem; /* bigger */
     margin-bottom: 1rem;
 }
 
-/* Style for the subheading or description */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
 p {
     font-size: 1.5rem;
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* List */
+ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    opacity: 0.6;
 }
